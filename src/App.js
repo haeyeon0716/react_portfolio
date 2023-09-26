@@ -15,7 +15,7 @@ function App() {
 		<Route path='/youtube' component={Youtube}/>
 		<Route path='/members' component={Members}/>
 		<Route path='/contact' component={Contact}/>
-		<Route path='/gallery' component={Gallery} />
+		<Route path='/gallery' component={Gallery}/>
 		</>
 	);
 }
