@@ -2,7 +2,6 @@ import styles from './Layout.module.scss';
 import clsx from 'clsx'
 
 export default function Layout({title, children}) {
-    console.log(props);
   return (
     <section className={clsx(styles.layout)}>
         <figure></figure>
