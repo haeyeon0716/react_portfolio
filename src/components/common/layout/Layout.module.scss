@@ -1,16 +1,23 @@
-.layout{
-    width: 100%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 
-figure{
-    width: 100%;
-    height: 30vh;
-    background: gray;
-}
+.layout {
+	width: 100%;
 
-.content{
-    width: 80vw;
-    margin: 5vh auto; 
-    min-height: 60vh;
-    border: 1px solid #eee;
+	figure {
+		width: 100%;
+		height: 30vh;
+		background: gray;
+	}
+
+	.content {
+		width: 80vw;
+		margin: 5vh auto;
+		min-height: 60vh;
+
+		h1 {
+			font: normal 100px/1 'Nanum Myeongjo';
+			color: #555;
+			margin-bottom: 30px;
+		}
+	}
 }

@@ -43,6 +43,7 @@ export default function Department() {
 					);
 				})}
 			</div>
+
 			<div className={styles.memberBox}>
 				{Department.map((member, idx) => {
 					return (
