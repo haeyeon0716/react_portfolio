@@ -21,9 +21,11 @@ export default function Layout({ title, children, styleName }) {
 	};
 
 	useEffect(() => {
-		setIsOn(true);
 		//컴포넌트가 마운트되자마자 h1요소가 담겨있는 참조객체를 인수로 전달해서 글자 분리
 		splitText(tit, 0.1, 1);
+		//splitText함수가 기존 가상돔요소를 변경시 약간의 시간이 걸리기 때문에
+		//0.3초 뒤에 span으로 분리가 완료된 이후 on클래스를 추가
+		setTimeout(() => setIsOn(true), 300);
 	}, []);
 
 	return (
